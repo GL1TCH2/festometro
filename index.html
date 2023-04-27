@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Festometro</title>
+</head>
+
+<body>
+
+
+    <main>
+        <div class="titulo">
+            <h1>Saiba quanto de cada coisa voce vai precisar para sua festa</h1>
+        </div>
+        <div class="cards">
+            <div class="estilocard" onclick="churrasco()">
+                <h3>churrasco</h3>
+                <img width="300" src="./dia-do-churrasco-800x543 1.png" alt="">
+            </div>
+
+            <div class="Modal" id="ModalChurrasco">
+                <div class="ModalChurrascoContent">
+                    <span id="fecharModalChurrasco">x</span>
+                    <p>Gastos para o churrasco</p>
+
+                    <label>Adultos</label><br>
+                    <input type="number" id="Adultos"><br>
+                    <label>Crianças</label><br>
+                    <input type="number" id="Crianças"><br>
+                    <label>Duração</label><br>
+                    <input type="number" id="Duração"><br>
+                    <button onclick="resultadochurrasco()">Calcular</button>
+
+                    <br>
+                    <div id="resultado"></div>
+                </div>
+            </div>
+
+
+            <div class="estilocard" onclick="festa()">
+                <h3>festa</h3>
+                <img width="300" src="./transferir 1.png" alt="">
+                       
+            </div>
+            <div class="Modal festa" id="Modalfesta">
+                <div class="ModalChurrascoContent">
+                    <span id="fecharModalfesta">x</span>
+                    <p>Gastos para festa</p>
+
+                    <label>Adultos</label><br>
+                    <input type="number" id="Adultosfesta"><br>
+                    <label>Crianças</label><br>
+                    <input type="number" id="Criançasfesta"><br>
+                    <label>Duração</label><br>
+                    <input type="number" id="Duraçãofesta"><br>
+                    <button onclick="resultadofesta()">Calcular</button>
+
+                    <br>
+                    <div id="resultfesta"></div>
+                </div>
+            </div>
+
+    </main>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
